@@ -1,8 +1,19 @@
 ---
 - hosts: localhost
+  order: sorted # random order. Why not.
   tasks: 
+  - name: lint yourself ansible
+    shell: ansible-lint playbook.yml
+
+  - name: start docker compose
+    shell: docker-compose up -d
+
   - name: hello world
     shell: echo "hello world!"
+
+  - name: test connection...with localhost...
+    ping:
+    remote_user: ubuntu 
 
     #- name: Get info on all nodes
     # add back in when setup swarm mode

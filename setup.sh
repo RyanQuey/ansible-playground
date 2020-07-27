@@ -3,7 +3,7 @@
 sudo apt update
 sudo apt install -y software-properties-common
 sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install -y ansible
+sudo apt install -y ansible ansible-lint
 
 # set up auto complete
 # https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#ansible-command-shell-completion
