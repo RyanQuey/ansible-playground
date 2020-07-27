@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks: 
+  - name: hello world
+    shell: echo "hello world!"
+
+    #- name: Get info on all nodes
+    # add back in when setup swarm mode
+    #docker_node_info:
+    #  name: 
+    #    - node_1 
+    #register: result

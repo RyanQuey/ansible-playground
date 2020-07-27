@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  node_1:
+    build: 
+      context: .
+      args: 
+        node_num: 1
+        other_node_num: 2
+    container_name: ansible_test_node_1
+  node_2:
+    build: 
+      context: .
+      args: 
+        node_num: 2
+        other_node_num: 1
+    container_name: ansible_test_node_2
